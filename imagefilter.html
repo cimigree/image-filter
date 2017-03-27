@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cindy Green's Image Filter</title>
+<meta charset="utf-8">
+<meta name = "viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="image-filter.js"></script>
+    <link rel="stylesheet" type="text/css" href="image-filter-styles.css">
+    </head>
+<body>        
+<h1>Fun With Filters</h1>
+  <div class="site">
+<canvas id="cvs">
+</canvas>
+  <div class="inplab">
+  <h3>Choose an Image to Apply Filters</h3>
+  <input type="file" id="imgFile" multiple="false" accept="image/*" onchange=upload()>
+  </div>
+  <div id="filterbuttons">
+ <input type="button" id="greyBtn" value="Greyscale" onclick="makeGrey()">
+  <input type="button" id="redBtn" value="Redden" onclick="makeRed()">
+    <input type="button" id="reverseBtn" value="Reverse" onclick="makeReverse()">
+    <input type="button" id="barsBtn" value="Prison Bars" onclick="makePrisonBars()">
+    <input type="button" id="rainbowBtn" value="Rainbow" onclick="makeRainbow()">
+    <input type="button" id="clearBtn" value="Clear formatting" onclick="makeClear()">
+  </div>
+    </div>
+  </body>
+  </html>
